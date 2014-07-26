@@ -24,6 +24,7 @@
     static dispatch_once_t once;
     static PSProgressHUD *sharedView;
     dispatch_once(&once, ^ { sharedView = [[self alloc] initWithFrame:[[UIScreen mainScreen] bounds]]; });
+    sharedView.alpha = 0.f;
     return sharedView;
 }
 
@@ -123,7 +124,6 @@
     } completion:^(BOOL finished) {
         [[NSNotificationCenter defaultCenter] removeObserver:self];
         [self.hudView stopAnimating];
-        [self.hudView removeFromSuperview];
         [self.overlayView removeFromSuperview];
         self.overlayView = nil;
 
