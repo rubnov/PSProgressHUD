@@ -21,6 +21,7 @@
 		E9202227198442FA0016220B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9202209198442F90016220B /* UIKit.framework */; };
 		E920222F198442FA0016220B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E920222D198442FA0016220B /* InfoPlist.strings */; };
 		E9202231198442FA0016220B /* PSProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9202230198442FA0016220B /* PSProgressHUDTests.m */; };
+		E9202240198446380016220B /* PSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E920223F198446380016220B /* PSProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		E920222C198442FA0016220B /* PSProgressHUDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PSProgressHUDTests-Info.plist"; sourceTree = "<group>"; };
 		E920222E198442FA0016220B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E9202230198442FA0016220B /* PSProgressHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUDTests.m; sourceTree = "<group>"; };
+		E920223E198446380016220B /* PSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSProgressHUD.h; sourceTree = "<group>"; };
+		E920223F198446380016220B /* PSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		E920220B198442F90016220B /* PSProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				E920223A198443070016220B /* PSProgressHUD */,
 				E9202214198442F90016220B /* AppDelegate.h */,
 				E9202215198442F90016220B /* AppDelegate.m */,
 				E9202217198442F90016220B /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				E920222D198442FA0016220B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E920223A198443070016220B /* PSProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E920223E198446380016220B /* PSProgressHUD.h */,
+				E920223F198446380016220B /* PSProgressHUD.m */,
+			);
+			name = PSProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E920221C198442F90016220B /* ViewController.m in Sources */,
+				E9202240198446380016220B /* PSProgressHUD.m in Sources */,
 				E9202216198442F90016220B /* AppDelegate.m in Sources */,
 				E9202212198442F90016220B /* main.m in Sources */,
 			);
@@ -382,6 +396,7 @@
 				GCC_PREFIX_HEADER = "PSProgressHUD/PSProgressHUD-Prefix.pch";
 				INFOPLIST_FILE = "PSProgressHUD/PSProgressHUD-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,6 +410,7 @@
 				GCC_PREFIX_HEADER = "PSProgressHUD/PSProgressHUD-Prefix.pch";
 				INFOPLIST_FILE = "PSProgressHUD/PSProgressHUD-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
