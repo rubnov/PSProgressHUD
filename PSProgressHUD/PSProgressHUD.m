@@ -132,6 +132,11 @@
 }
 
 
++ (BOOL)isVisible {
+    return ([self sharedView].alpha == 1);
+}
+
+
 
 - (void)positionHUD:(NSNotification*)notification {
     

@@ -12,5 +12,6 @@
 
 + (void) show;
 + (void) dismiss;
++ (BOOL) isVisible;
 
 @end
