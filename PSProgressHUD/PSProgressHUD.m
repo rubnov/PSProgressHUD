@@ -54,7 +54,7 @@
         NSArray *imgNums = @[@1,@2,@3,@4];
         CGRect bounds;
         for (NSNumber *num in imgNums) {
-            NSString *strImgeName = [NSString stringWithFormat:@"Loading%02d", [num integerValue]];
+            NSString *strImgeName = [NSString stringWithFormat:kHUDImageNameFormat, [num integerValue]];
             UIImage *image = [UIImage imageNamed:strImgeName];
             if (image) {
                 [imgListArray addObject:image];

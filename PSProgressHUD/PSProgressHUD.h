@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#define kPSHudImageNameFormat   @"Loading%02d"
+#define kPSHudImageNumbers      @[@1,@2,@3,@4];
+
 @interface PSProgressHUD : UIView
 
 + (void) show;
