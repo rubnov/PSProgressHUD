@@ -184,23 +184,18 @@
     CGFloat posX = orientationFrame.size.width/2;
     
     CGPoint newCenter;
-    CGFloat rotateAngle;
     
     switch (orientation) {
         case UIInterfaceOrientationPortraitUpsideDown:
-            rotateAngle = M_PI;
             newCenter = CGPointMake(posX, orientationFrame.size.height-posY);
             break;
         case UIInterfaceOrientationLandscapeLeft:
-            rotateAngle = -M_PI/2.0f;
             newCenter = CGPointMake(posY, posX);
             break;
         case UIInterfaceOrientationLandscapeRight:
-            rotateAngle = M_PI/2.0f;
             newCenter = CGPointMake(orientationFrame.size.height-posY, posX);
             break;
         default: // as UIInterfaceOrientationPortrait
-            rotateAngle = 0.0;
             newCenter = CGPointMake(posX, posY);
             break;
     }
